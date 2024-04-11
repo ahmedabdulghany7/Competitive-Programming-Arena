@@ -4,7 +4,7 @@ using namespace std;
 const int N = 1e5 + 10;
 int n, a[N];
 
-int binarySearch(int val)
+int binarySearch(int val) //complexity O(log(n))
 {
 	int l = 0, r = n - 1;
 	while (l <= r)
