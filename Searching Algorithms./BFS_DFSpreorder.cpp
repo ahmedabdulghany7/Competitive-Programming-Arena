@@ -87,6 +87,34 @@ public:
 
         }
     }
+
+    void display_DFS_preorder() {
+
+        if (root == nullptr)
+        {
+            cout << "Tree is empty\n";
+            return;
+        }
+        else
+        {
+			stack<Node*> s;
+			s.push(root);
+            while (!s.empty())
+            {
+				Node* temp = s.top();
+				s.pop();
+				cout << temp->data << ' ';
+                if (temp->right != nullptr)
+                {
+					s.push(temp->right);
+				}
+                if (temp->left != nullptr)
+                {
+					s.push(temp->left);
+				}
+			}
+		}
+    }
 };
 
 int main()
@@ -100,6 +128,10 @@ int main()
     tree.add(12);
     tree.add(18);
     tree.display_BFS();
+
+    cout << '\n';
+
+    tree.display_DFS_preorder();
 
     return 0;
 }
