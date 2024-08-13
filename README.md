@@ -1,2 +1,2 @@
 # Competitive-Programming-Arena
-Welcome to "Competitive-Programming-Arena" Your go-to repository for the art of competitive programming!
+Welcome to "Competitive-Programming-Arena" Go-To repository for the art of competitive programming!
